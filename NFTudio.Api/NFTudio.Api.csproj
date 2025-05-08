@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <ItemGroup>
+    <ProjectReference Include="..\NFTudio.Core\NFTudio.Core.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>e8fdd909-e65d-40fb-b489-c5208fe541f6</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.5">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.1" />
+  </ItemGroup>
+
+</Project>

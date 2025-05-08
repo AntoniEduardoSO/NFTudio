@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFTudio.Api", "NFTudio.Api\NFTudio.Api.csproj", "{68D3D6CF-2AE8-402C-86F9-526B69AA9044}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFTudio.Core", "NFTudio.Core\NFTudio.Core.csproj", "{384EC2A5-4E5E-4132-A171-A99B60D4CDCD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68D3D6CF-2AE8-402C-86F9-526B69AA9044}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68D3D6CF-2AE8-402C-86F9-526B69AA9044}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68D3D6CF-2AE8-402C-86F9-526B69AA9044}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68D3D6CF-2AE8-402C-86F9-526B69AA9044}.Release|Any CPU.Build.0 = Release|Any CPU
+		{384EC2A5-4E5E-4132-A171-A99B60D4CDCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{384EC2A5-4E5E-4132-A171-A99B60D4CDCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{384EC2A5-4E5E-4132-A171-A99B60D4CDCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{384EC2A5-4E5E-4132-A171-A99B60D4CDCD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
