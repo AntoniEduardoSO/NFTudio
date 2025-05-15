@@ -14,8 +14,8 @@ builder.AddServices();
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
-    app.ConfigureDevEnvironment();
+
+app.ConfigureDevEnvironment();
 
 app.SeedSql();
 app.UseCors(ApiConfiguration.CorsPolicyName);
