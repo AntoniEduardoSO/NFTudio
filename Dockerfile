@@ -19,6 +19,7 @@ RUN dotnet publish -c Release -o /app/publish
 FROM base AS final
 WORKDIR /app
 COPY --from=build /app/publish .
+COPY NFTudio.Api/Data/seed.sql ./Data/seed.sql
 
 # Entry point do container
 ENTRYPOINT ["dotnet", "NFTudio.Api.dll"]
