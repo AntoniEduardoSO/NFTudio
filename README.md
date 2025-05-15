@@ -1,6 +1,6 @@
 # 🧾 NFTudio API
 
-NFTudio é uma API REST desenvolvida em .NET 8 para gerenciar empresas parceiras (Associates), suas áreas de atuação e links relacionados. O projeto tem como foco a simplicidade, organização e estrutura leve, ideal para simulações e aprendizado de arquitetura de APIs modernas com C#. Ela foi projetada para a empresa NFTudio Lab.
+NFTudio é uma API REST desenvolvida em .NET 8 para gerenciar empresas parceiras (Associates), suas áreas de atuação e links relacionados. O projeto tem como foco a simplicidade, organização e estrutura leve, Ela foi projetada para a empresa NFTudio Lab.
 
 ---
 
