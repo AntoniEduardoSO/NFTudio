@@ -6,7 +6,7 @@ namespace NFTudio.Core.Handlers;
 public interface IAssociateHandler
 {
     public Task<Response<AssociateResponseDto?>> CreateAsync(CreateAssociateRequest request);
-    public Task<PagedResponse<ICollection<AssociateResponseDto>>> GetAllAsync(GetAllAssociateRequest request);
-    public Task<Response<Associate>> UpdateAsync(UpdateAssociateRequest request);
-    public Task<Response<Associate>> GetByFilterAsync(GetByFilterAssociateRequest request);
+    public Task<PagedResponse<ICollection<AssociateResponseDto>>> GetAllHomeAsync(GetAllAssociateHomeRequest request);
+    public Task<PagedResponse<ICollection<AssociateResponseDto>>> GetAllManageAsync(GetAllAssociateManageRequest request);
+    public Task<Response<AssociateResponseDto>> UpdateAsync(UpdateAssociateRequest request);
 }
