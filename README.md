@@ -1,6 +1,6 @@
 # 🧾 NFTudio API
 
-NFTudio é uma API REST desenvolvida em .NET 8 para gerenciar empresas parceiras (Associates), suas áreas de atuação e links relacionados. O projeto tem como foco a simplicidade, organização e estrutura leve, ideal para simulações e aprendizado de arquitetura de APIs modernas com C#.
+NFTudio é uma API REST desenvolvida em .NET 8 para gerenciar empresas parceiras (Associates), suas áreas de atuação e links relacionados. O projeto tem como foco a simplicidade, organização e estrutura leve, ideal para simulações e aprendizado de arquitetura de APIs modernas com C#. Ela foi projetada para a empresa NFTudio Lab.
 
 ---
 
@@ -43,11 +43,13 @@ NFTudio/
 git clone https://github.com/AntoniEduardoSO/NFTudio.git
 cd NFTudio
 dotnet restore
+cd NFTudio.Api
+dotnet user-secrets set "ConnectionStrings:DefaultConnection" : "Data Source=CAMINHO_PARA_SEU_BD"
 dotnet ef database update
-dotnet run --project NFTudio.Api
+dotnet run
 ```
 
-Acesse a API em `http://localhost:5000` (ou porta configurada).
+Acesse a API em appsettings.json, fica salvo os valores da url`s tanto no back, como no front para questão de CORS.
 
 ---
 
@@ -81,10 +83,3 @@ Acesse a API em `http://localhost:5000` (ou porta configurada).
 ## 📄 Licença
 
 Este projeto está sob a licença MIT.
-
----
-
-## 🤝 Contribuições
-
-Sinta-se livre para abrir issues e enviar pull requests!
-
