@@ -1,53 +1,54 @@
-INSERT INTO "Operations" ("Id","Name") VALUES
- (1,  'Academia'),
- (2,  'Academia de Artes Marciais'),
- (3,  'AgroPet'),
- (4,  'Artesanato'),
- (5,  'Assistência de Informática'),
- (6,  'Barbearia'),
- (7,  'Cafeteria'),
- (8,  'Camas e Colchões'),
- (9,  'Clube de Tennis'),
- (10,  'Clínicas Médicas e Odontológicas'),
- (11,  'Cobertura de Eventos'),
- (12,  'Construtora'),
- (13,  'Consultoria'),
- (14,  'Contabilidade'),
- (15,  'Corretor de Imóveis'),
- (16,  'Coworking e Espaços de Trabalho'),
- (17,  'Decoração e Festas'),
- (18,  'Direito'),
- (19,  'Eletrônicos'),
- (20,  'Empresas de Turismo'),
- (21,  'Engenharia, Arquitetura e Construção'),
- (22,  'Escola / Faculdade'),
- (23,  'Escola de Idiomas'),
- (24,  'Fisioterapia'),
- (25,  'Gráfica'),
- (26,  'Hotelaria'),
- (27,  'Instalação de Energia Solar'),
- (28,  'Lavanderias e delivery de roupas limpas'),
- (29,  'Loja de Eletrônicos'),
- (30,  'Loja de Ferramentas e Materiais de Construção'),
- (31,  'Loja de Malas, Mochilas e Bagagens'),
- (32,  'Movelaria'),
- (33,  'Oficinas'),
- (34,  'Padarias'),
- (35,  'Papelaria'),
- (36,  'Peixaria'),
- (37,  'Personal Trainer'),
- (38,  'Pet Shop'),
- (39,  'Postos de Gasolina'),
- (40,  'Produtos Químicos'),
- (41,  'Produtos para Bebês'),
- (42,  'Refrigeração'),
- (43,  'Restaurantes e Lanchonetes'),
- (44,  'Roupas e Acessórios'),
- (45,  'Roupas e Artigos de Surf e afins'),
- (46,  'Saúde e Bem Estar'),
- (47,  'Seguradora'),
- (48,  'Supermercados'),
- (49,  'Óticas');
+INSERT INTO "Operations" ("Id","Name")
+VALUES
+(1,  'Academia'),
+(2,  'Academia de Artes Marciais'),
+(3,  'AgroPet'),
+(4,  'Artesanato'),
+(5,  'Assistência de Informática'),
+(6,  'Barbearia'),
+(7,  'Cafeteria'),
+(8,  'Camas e Colchões'),
+(9,  'Clube de Tennis'),
+(10,  'Clínicas Médicas e Odontológicas'),
+(11,  'Cobertura de Eventos'),
+(12,  'Construtora'),
+(13,  'Consultoria'),
+(14,  'Contabilidade'),
+(15,  'Corretor de Imóveis'),
+(16,  'Coworking e Espaços de Trabalho'),
+(17,  'Decoração e Festas'),
+(18,  'Direito'),
+(19,  'Eletrônicos'),
+(20,  'Empresas de Turismo'),
+(21,  'Engenharia, Arquitetura e Construção'),
+(22,  'Escola / Faculdade'),
+(23,  'Escola de Idiomas'),
+(24,  'Fisioterapia'),
+(25,  'Gráfica'),
+(26,  'Hotelaria'),
+(27,  'Instalação de Energia Solar'),
+(28,  'Lavanderias e delivery de roupas limpas'),
+(29,  'Loja de Eletrônicos'),
+(30,  'Loja de Ferramentas e Materiais de Construção'),
+(31,  'Loja de Malas, Mochilas e Bagagens'),
+(32,  'Movelaria'),
+(33,  'Oficinas'),
+(34,  'Padarias'),
+(35,  'Papelaria'),
+(36,  'Peixaria'),
+(37,  'Personal Trainer'),
+(38,  'Pet Shop'),
+(39,  'Postos de Gasolina'),
+(40,  'Produtos Químicos'),
+(41,  'Produtos para Bebês'),
+(42,  'Refrigeração'),
+(43,  'Restaurantes e Lanchonetes'),
+(44,  'Roupas e Acessórios'),
+(45,  'Roupas e Artigos de Surf e afins'),
+(46,  'Saúde e Bem Estar'),
+(47,  'Seguradora'),
+(48,  'Supermercados'),
+(49,  'Óticas');
 
 INSERT INTO "Associates" 
 ("Id", "Name", "Description", "Email", "Benefit", "Situation", "AssociateImagemUrl") VALUES
@@ -150,6 +151,7 @@ INSERT INTO "Associates"
 (97, 'COLÉGIO SANTÍSSIMO REI', NULL, NULL, NULL, 'Primeiro Contato', NULL),
 (98, 'Escola Integral O Verbo', NULL, NULL, NULL, 'Selecione uma opção a seguir', NULL),
 (99, 'Colégio Ativo', NULL, NULL, NULL, 'Selecione uma opção a seguir', NULL),
+(100, 'Colégio Maximu''s', NULL, NULL, NULL, 'Primeiro Contato', NULL),
 (101, 'Colégio Maria Montessori', NULL, NULL, NULL, 'Selecione uma opção a seguir', NULL),
 (102, 'Colégio Santa Rosa', NULL, NULL, NULL, 'Selecione uma opção a seguir', NULL),
 (103, 'Expoente Colégio e Cursos', NULL, NULL, NULL, 'Selecione uma opção a seguir', NULL),
@@ -249,7 +251,166 @@ INSERT INTO "Associates"
 (197, 'MCZ Mais Solar', NULL, NULL, NULL, 'Primeiro Contato', NULL),
 (198, 'KL Solar', NULL, NULL, NULL, 'Parceria em Análise', NULL),
 (199, 'Solaric Energia Fotovoltaica', NULL, NULL, NULL, 'Primeiro Contato', NULL),
-(200, 'Clube do Fera', NULL, NULL, '15% em descontos e mensalidades', 'Contrato em Andamento', NULL);
+(200, 'Clube do Fera', NULL, NULL, '15% em descontos e mensalidades', 'Contrato em Andamento', NULL),
+(201, 'Camerino Cursos', NULL, NULL, NULL, 'Selecione uma opção a seguir', NULL),
+(202, 'Roll Up Pilates Studios', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(203, 'StudioPatríciaPassos', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(204, 'Larissa Buarque Studio de Pilates', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(205, 'INSPIRA PILATES STUDIO', NULL, NULL, NULL, 'Parceria Rejeitada', NULL),
+(206, 'Espaço Vita', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(207, 'Studio Fisio Pilates', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(208, 'Fisio & Forma Pilates', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(209, 'Pilates S2 Medeiros', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(210, 'Fisiostudio Débora Maria', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(211, 'Studio Balance - Galeria Boulevard Pilates Ledivania', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(212, 'FisioCorpus Pilates', NULL, NULL, NULL, 'Selecione uma opção a seguir', NULL),
+(213, 'Fisioterapia Pilates Alana Cordeiro', NULL, NULL, NULL, 'Parceria em Análise', NULL),
+(214, 'Leila Rocha Pilates', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(215, 'Centro de Treinamento Especializado', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(216, 'Studio de Pilates Nara Nascimento', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(217, 'Studio Pilates Viver em Equilíbrio', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(218, 'Clínica FisioTrate', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(219, 'Evoar - Reabilitação Cardiopulmonar e Performance', NULL, NULL, NULL, 'Parceria Rejeitada', NULL),
+(220, 'Centro Médico Fisioteravida', NULL, NULL, NULL, 'Selecione uma opção a seguir', NULL),
+(221, 'Dr. Edney Barbosa - Fisioterapeuta e Quiropraxia Maceió', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(222, 'Bettas Cursos e Investimentos', NULL, 'contato@bettascursos.com.br', '20% de deconto em todos os produtos do Bettas Cursos', 'Aguardando assinatura do contrato', NULL),
+(223, 'Alysson Nobre Personal', NULL, NULL, 'Novos valores diferenciados:
+Ergoespirometria - De R$ 350,00 por R$ 300,00.
+Calorimetria indireta - De R$ 250,00 por R$ 200,00
+Bioimpedancia de 4ª geração - De R$ 200,00 por R$ 150,00
+Nos planos de Assessoria (10% off com testes de bioimpedância incluindo):
+- Assessoria esportiva planos trimestral - De R$ 700,00 por R$ 630,00 
+- Assessoria esportiva planos semestral - De R$ 1.200,00 por R$ 1.080,00
+- Assessoria esportiva planos trimestral - De R$ 1.500,00 por R$ 1.350,00]', 'Parceria Concluída e Publicada', NULL),
+(224, 'Louge VIP Turismo', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(225, 'Verdi Seguros', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(226, 'Estação Cross MCZ', NULL, NULL, 'Até 15% de desconto em qualquer produto da Loja', 'Aguardando assinatura do contrato', NULL),
+(227, 'Assertiva Soluções Contábeis', NULL, 'contato@assertivasc.com.br', '30% de desconto no IRPF (Pessoa Física) e Abertura de empresa grátis e 20% de desconto nos honorários contábeis  para PJs.', 'Parceria Concluída e Publicada', NULL),
+(228, 'Grupo Redes e Saberes', NULL, 'adm@gruporedesesaberes.com.br', 'Inclusão de 3 a 5 análises de perfil comportamental DISC gratuitamente na contratação de soluções Redes e Saberes, com relatórios completos  e sugestões de plano de ação para desenvolvimento pessoal. Pode ser disponibilizada a líderes ou colaboradores.', 'Parceria Concluída e Publicada', NULL),
+(229, 'Audaz Consultoria', NULL, NULL, '15% nos descontos dos serviços de consultoria', 'Contrato em Andamento', NULL),
+(230, 'Curso Sthephano Sousa', NULL, NULL, NULL, 'Parceria em Análise', NULL),
+(231, 'LA Engenharia', NULL, NULL, NULL, 'Parceria em Análise', NULL),
+(232, 'Up Club', NULL, NULL, NULL, 'Contrato em Andamento', NULL),
+(233, 'Loanne Los Estética', NULL, NULL, NULL, 'Contrato em Andamento', NULL),
+(234, 'Arena Lyra', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(235, 'Panificação Jatiúca', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(236, 'Jaraguá Tenis Club', NULL, NULL, NULL, 'Selecione uma opção a seguir', NULL),
+(237, 'Empório da Química', NULL, NULL, NULL, 'Selecione uma opção a seguir', NULL),
+(238, 'Posto Tigre Shell', NULL, NULL, NULL, 'Selecione uma opção a seguir', NULL),
+(239, 'Martelinho de Ouro (1)', NULL, NULL, NULL, 'Parceria em Análise', NULL),
+(240, 'Kekel Pizza', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(241, 'FisioPalm', NULL, NULL, NULL, 'Parceria Concluída e Publicada', NULL),
+(242, 'LegalSelling', NULL, NULL, '10% de desconto nos 3 planos de implementação da metodologia', 'Parceria Concluída e Publicada', NULL),
+(243, 'Restaurante Potiguar', NULL, NULL, NULL, 'Parceria Rejeitada', NULL),
+(244, 'RR Lanches (Na Rua)', NULL, NULL, NULL, 'Parceria em Análise', NULL),
+(245, 'No Espeto (Na Rua)', NULL, NULL, NULL, 'Parceria em Análise', NULL),
+(246, 'Grupo Illa', NULL, NULL, NULL, 'Parceria em Análise', NULL),
+(247, 'Old House Pizzaria', NULL, NULL, NULL, 'Parceria em Análise', NULL),
+(248, 'Maria Coxinha', NULL, NULL, NULL, 'Parceria em Análise', NULL),
+(249, 'Café Regional (Na Rua)', NULL, NULL, NULL, 'Parceria em Análise', NULL),
+(250, 'Sucrepe (Na Rua)', NULL, NULL, NULL, 'Parceria Rejeitada', NULL),
+(251, 'Sarah Make & Hair - Boulevard', NULL, NULL, NULL, 'Contrato em Andamento', NULL),
+(252, 'Prof. Carlos Conce', NULL, NULL, NULL, 'Parceria Rejeitada', NULL),
+(253, 'Fernando Peron', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(254, 'Alberto Antunes', NULL, NULL, NULL, 'Parceria Rejeitada', NULL),
+(255, 'David anderson Personal', NULL, NULL, NULL, 'Parceria Rejeitada', NULL),
+(256, 'Unicesumar', NULL, NULL, NULL, 'Parceria em Análise', NULL),
+(257, 'Sup Do Gaúcho', NULL, NULL, NULL, 'Parceria Rejeitada', NULL),
+(258, 'MegaBox', NULL, NULL, NULL, 'Selecione uma opção a seguir', NULL),
+(259, 'Hamburguer do Mario', NULL, NULL, NULL, 'Contrato em Andamento', NULL),
+(260, 'HG Studio Pilates', NULL, NULL, '20% nos serviços oferecidos pelo Studio', 'Parceria Concluída e Publicada', NULL),
+(261, 'Victorya Nails', NULL, NULL, NULL, 'Parceria Rejeitada', NULL),
+(262, 'Grace Camilo Nutricionista', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(263, 'Mayara Francisca Projetos', NULL, NULL, '30% de desconto na aquisição de qualquer ambiente planejado (móveis planejados)', 'Parceria Concluída e Publicada', NULL),
+(264, 'Emi Design', NULL, NULL, 'Na aquisição de um projeto de Design de Interiores você ganha 50% de desconto no segundo projeto.', 'Parceria Concluída e Publicada', NULL),
+(265, 'Só Reparos', NULL, NULL, NULL, 'Parceria Rejeitada', NULL),
+(266, 'Auto Machine', NULL, NULL, NULL, 'Contrato em Andamento', NULL),
+(267, 'MM Madeiras', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(268, 'Empresarial Locação (Vizinho ao Santissima Trindade)', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(269, 'Veletrica Materiais', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(270, 'Inove Estética', NULL, NULL, NULL, 'Parceria Rejeitada', NULL),
+(271, 'Amadeus Madeiras', NULL, NULL, NULL, 'Parceria em Análise', NULL),
+(272, 'P. Luiz Vem Historiar', NULL, NULL, NULL, 'Parceria em Análise', NULL),
+(273, 'P. Ricardo Isolada Geografia', NULL, NULL, NULL, 'Parceria Rejeitada', NULL),
+(274, 'CodeMinds', NULL, NULL, NULL, 'Parceria Concluída e Publicada', NULL),
+(275, 'Budo - Escola de Artes Marciais', NULL, NULL, NULL, 'Parceria em Análise', NULL),
+(276, 'G1 - Centro de treinamento Muay Thai', NULL, NULL, NULL, 'Parceria Rejeitada', NULL),
+(277, 'DoKyokushinkai - Karate', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(278, 'Kung Fu XiaoBu', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(279, 'Kimura Jiu Jitsu', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(280, 'Mcz Fight Club', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(281, 'Gracie Barra', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(282, 'Dakaru', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(283, 'Miyajima Club  Karate Shotokan', NULL, NULL, NULL, 'Parceria Rejeitada', NULL),
+(284, 'Panetutti Maceio', NULL, NULL, NULL, 'Parceria Rejeitada', NULL),
+(285, 'Máxima Performance', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(286, 'Wing Tsun Defesa Pessoal', NULL, NULL, NULL, 'Parceria em Análise', NULL),
+(287, 'Bukan Dojo', NULL, NULL, NULL, 'Parceria em Análise', NULL),
+(288, 'Budokan Escola de Artes Marciais', NULL, NULL, NULL, 'Parceria Rejeitada', NULL),
+(289, 'Octógono fight', NULL, NULL, NULL, 'Parceria em Análise', NULL),
+(290, 'Associação Marciiais Kumiai-Ryu', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(291, 'Dojô kiritsu', NULL, NULL, NULL, 'Parceria Rejeitada', NULL),
+(292, 'Candido Clube do Judo', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(293, 'Shizentai Dojo', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(294, 'Furia Fight', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(295, 'Adrian Ferro', NULL, NULL, NULL, 'Parceria Concluída e Publicada', NULL),
+(296, 'Pegue e Monte Premium', NULL, NULL, NULL, 'Parceria Concluída e Publicada', NULL),
+(297, 'Martelinho de Ouro Prime', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(298, 'Igor Delivery car martelinho', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(299, 'Jonathan Martelinho de Ouro', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(300, 'Martelinho de Ouro (2)', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(301, 'Alagoana Pintura Automotiva', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(302, 'Auto Moderna Funilaria e Pintura', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(303, 'Martelinho de Ouro Eduardo', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(304, 'Martelinho de Ouro (3)', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(305, 'SpecialCar - Recuperação e Pintura Automotiva', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(306, 'Fume ,martelinho de ouro', NULL, NULL, NULL, 'Parceria em Análise', NULL),
+(307, 'LEANDRO AUTO SERVICE', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(308, 'Tiago martelinho', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(309, 'Oficina J. Lailto', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(310, 'Siga Bijoux', NULL, NULL, NULL, 'Parceria Rejeitada', NULL),
+(311, 'Central da Molduras', NULL, NULL, NULL, 'Parceria em Análise', NULL),
+(312, 'Vitrine Plus Size', NULL, NULL, NULL, 'Parceria em Análise', NULL),
+(313, 'Livraria Globo Papelaria', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(314, 'Feminine Acessórios', NULL, NULL, NULL, 'Parceria Rejeitada', NULL),
+(315, 'Buda Makeup e Acessórios', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(316, 'Londres Jóias & Variedades', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(317, 'Loja do Sono', NULL, NULL, NULL, 'Contrato em Andamento', NULL),
+(318, 'Markas Surf Shop', NULL, NULL, NULL, 'Contrato em Andamento', NULL),
+(319, 'INCOREL', NULL, 'POSSÍVEL PARCERIA PARA SER CLIENTE', NULL, 'Parceria Rejeitada', NULL),
+(320, 'Palácio do Bebê', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(321, 'Pata Leve', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(322, 'Inluxe', NULL, NULL, NULL, 'Parceria Rejeitada', NULL),
+(323, 'Mundo do Celular', NULL, NULL, NULL, 'Parceria em Análise', NULL),
+(324, 'Tecplus Assitência de Informática', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(325, 'Danielle Moda Fitness', NULL, NULL, NULL, 'Parceria Rejeitada', NULL),
+(326, 'Fogão Colonial', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(327, 'YVA Doce', NULL, NULL, NULL, 'Parceria Rejeitada', NULL),
+(328, 'Star Modas', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(329, 'Bolsas de Valor', NULL, NULL, NULL, 'Contrato em Andamento', NULL),
+(330, 'Graffix', NULL, NULL, NULL, 'Parceria em Análise', NULL),
+(331, 'Giullya Storymaker', NULL, NULL, NULL, 'Selecione uma opção a seguir', NULL),
+(332, 'Lutador - Academia Amigo de Adrian', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(333, 'Andrezza Brandão Clinica', NULL, NULL, 'Clínica: 15% em produtos não promocionais  /// Salão: 10% desconto em tratamentos & 5% desconto em químicas. Exceto planos promocionais', 'Parceria Concluída e Publicada', NULL),
+(334, 'Andrezza Brandão Empresarial', NULL, NULL, 'Empresarial Anayah: Aluguéis de salas para profissionais liberais por turno  10% de desconto no primeiro contrato', 'Parceria Concluída e Publicada', NULL),
+(335, 'Play Educação', NULL, NULL, '40% nas mensalidades da Play', 'Aguardando assinatura do contrato', NULL),
+(336, 'Marcus Refrigeração', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(337, 'É de Casa Energia Solar', NULL, 'edecasaenergiasolar@gmail.com', NULL, 'Aguardando assinatura do contrato', NULL),
+(338, 'Nexa Consultoria', NULL, 'rhafaellak@gmail.com', '1h de consultoria gratuita sobre captação de recursos', 'Parceria Concluída e Publicada', NULL),
+(339, 'Pense Solar', NULL, 'comercialpense.solar@gmail.com', '5% de desconto nos produtos/serviços oferecidos pela empresa.', 'Parceria Concluída e Publicada', NULL),
+(340, 'ODONTO LOVE', NULL, NULL, NULL, 'Parceria em Análise', NULL),
+(341, 'G.Silveira e Santos', NULL, 'lannysilver14@gmail.com', '20% em produtos e 10% em exame de vista', 'Aguardando assinatura do contrato', NULL),
+(342, 'Risen Engenharia', NULL, NULL, NULL, 'Parceria Rejeitada', NULL),
+(343, 'Odonto Central', NULL, NULL, NULL, 'Primeiro Contato', NULL),
+(344, 'Francês Sublimação', NULL, NULL, NULL, 'Parceria Rejeitada', NULL),
+(345, 'Empório Padilha', NULL, NULL, NULL, 'Ignorou Contato após sucessivas tentativas', NULL),
+(346, 'ProVet Produtos e Serviços AgroPet', NULL, 'provetprodutoseservicosvet@gmail.com', '5% de desconto em produtos do pet shop, ou banho e tosa ou serviços veterinários', 'Aguardando assinatura do contrato', NULL),
+(347, 'Lavanderia viver bem', NULL, NULL, NULL, 'Parceria Rejeitada', NULL),
+(348, 'Pousada Recanto do Francês', NULL, 'recantodofran6@gmail.com', '10% de desconto em qualquer hospedagem.', 'Aguardando assinatura do contrato', NULL),
+(349, 'English For You', NULL, 'belagarcia30@gmail.com', 'Aula experimental grátis e 50% de desconto na 1° mensalidade', 'Aguardando assinatura do contrato', NULL),
+(350, 'Fox Brasil Francês', NULL, NULL, NULL, 'Ignorou Contato após sucessivas tentativas', NULL),
+(351, 'Izabela Garcia Yoga', NULL, 'belagarcia30@gmail.com', 'Aula experimental grátis e 10% desconto no pagamento mensal', 'Aguardando assinatura do contrato', NULL),
+(352, 'UbuD Apartments', NULL, 'belagarcia30@gmail.com', '10% de desconto em cima do valor do booking', 'Aguardando assinatura do contrato', NULL);
 
 INSERT INTO "AssociateOperations" ("AssociateId", "OperationId") VALUES
 (1, 24),
@@ -351,7 +512,7 @@ INSERT INTO "AssociateOperations" ("AssociateId", "OperationId") VALUES
 (97, 22),
 (98, 22),
 (99, 22),
-(100, 22);
+(100, 22),
 (101, 22),
 (102, 22),
 (103, 22),
@@ -451,416 +612,7 @@ INSERT INTO "AssociateOperations" ("AssociateId", "OperationId") VALUES
 (197, 27),
 (198, 27),
 (199, 27),
-(200, 22);
-
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (201, 'Camerino Cursos', NULL, NULL,
- NULL, 'Selecione uma opção a seguir', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (202, 'Roll Up Pilates Studios', NULL, NULL,
- NULL, 'Primeiro Contato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (203, 'StudioPatríciaPassos', NULL, NULL,
- NULL, 'Primeiro Contato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (204, 'Larissa Buarque Studio de Pilates', NULL, NULL,
- NULL, 'Primeiro Contato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (205, 'INSPIRA PILATES STUDIO', NULL, NULL,
- NULL, 'Parceria Rejeitada', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (206, 'Espaço Vita', NULL, NULL,
- NULL, 'Primeiro Contato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (207, 'Studio Fisio Pilates', NULL, NULL,
- NULL, 'Primeiro Contato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (208, 'Fisio & Forma Pilates', NULL, NULL,
- NULL, 'Primeiro Contato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (209, 'Pilates S2 Medeiros', NULL, NULL,
- NULL, 'Primeiro Contato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (210, 'Fisiostudio Débora Maria', NULL, NULL,
- NULL, 'Primeiro Contato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (211, 'Studio Balance - Galeria Boulevard Pilates Ledivania', NULL, NULL,
- NULL, 'Primeiro Contato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (212, 'FisioCorpus Pilates', NULL, NULL,
- NULL, 'Selecione uma opção a seguir', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (213, 'Fisioterapia Pilates Alana Cordeiro', NULL, NULL,
- NULL, 'Parceria em Análise', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (214, 'Leila Rocha Pilates', NULL, NULL,
- NULL, 'Primeiro Contato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (215, 'Centro de Treinamento Especializado', NULL, NULL,
- NULL, 'Primeiro Contato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (216, 'Studio de Pilates Nara Nascimento', NULL, NULL,
- NULL, 'Primeiro Contato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (217, 'Studio Pilates Viver em Equilíbrio', NULL, NULL,
- NULL, 'Primeiro Contato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (218, 'Clínica FisioTrate', NULL, NULL,
- NULL, 'Primeiro Contato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (219, 'Evoar - Reabilitação Cardiopulmonar e Performance', NULL, NULL,
- NULL, 'Parceria Rejeitada', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (220, 'Centro Médico Fisioteravida', NULL, NULL,
- NULL, 'Selecione uma opção a seguir', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (221, 'Dr. Edney Barbosa - Fisioterapeuta e Quiropraxia Maceió', NULL, NULL,
- NULL, 'Primeiro Contato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (222, 'Bettas Cursos e Investimentos', NULL, 'contato@bettascursos.com.br',
- '20% de deconto em todos os produtos do Bettas Cursos', 'Aguardando assinatura do contrato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (223, 'Alysson Nobre Personal', NULL, NULL,
- 'Novos valores diferenciados:
-Ergoespirometria - De R$ 350,00 por R$ 300,00;
-Calorimetria indireta - De R$ 250,00 por R$ 200,00
-Bioimpedancia de 4ª geração - De R$ 200,00 por R$ 150,00
-Nos planos de Assessoria (10% off com testes de bioimpedância incluindo):
-- Assessoria esportiva planos trimestral - De R$ 700,00 por R$ 630,00 
-- Assessoria esportiva planos semestral - De R$ 1.200,00 por R$ 1.080,00
-- Assessoria esportiva planos trimestral - De R$ 1.500,00 por R$ 1.350,00]', 'Parceria Concluída e Publicada', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (224, 'Louge VIP Turismo', NULL, NULL,
- NULL, 'Primeiro Contato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (225, 'Verdi Seguros', NULL, NULL,
- NULL, 'Primeiro Contato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (226, 'Estação Cross MCZ', NULL, NULL,
- 'Até 15% de desconto em qualquer produto da Loja', 'Aguardando assinatura do contrato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (227, 'Assertiva Soluções Contábeis', NULL, 'contato@assertivasc.com.br',
- '30% de desconto no IRPF (Pessoa Física) e Abertura de empresa grátis e 20% de desconto nos honorários contábeis  para PJs.', 'Parceria Concluída e Publicada', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (228, 'Grupo Redes e Saberes', NULL, 'adm@gruporedesesaberes.com.br',
- 'Inclusão de 3 a 5 análises de perfil comportamental DISC gratuitamente na contratação de soluções Redes e Saberes, com relatórios completos  e sugestões de plano de ação para desenvolvimento pessoal. Pode ser disponibilizada a líderes ou colaboradores.', 'Parceria Concluída e Publicada', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (229, 'Audaz Consultoria', NULL, NULL,
- '15% nos descontos dos serviços de consultoria', 'Contrato em Andamento', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (230, 'Curso Sthephano Sousa', NULL, NULL,
- NULL, 'Parceria em Análise', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (231, 'LA Engenharia', NULL, NULL,
- NULL, 'Parceria em Análise', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (232, 'Up Club', NULL, NULL,
- NULL, 'Contrato em Andamento', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (233, 'Loanne Los Estética', NULL, NULL,
- NULL, 'Contrato em Andamento', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (234, 'Arena Lyra', NULL, NULL,
- NULL, 'Primeiro Contato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (235, 'Panificação Jatiúca', NULL, NULL,
- NULL, 'Primeiro Contato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (236, 'Jaraguá Tenis Club', NULL, NULL,
- NULL, 'Selecione uma opção a seguir', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (237, 'Empório da Química', NULL, NULL,
- NULL, 'Selecione uma opção a seguir', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (238, 'Posto Tigre Shell', NULL, NULL,
- NULL, 'Selecione uma opção a seguir', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (239, 'Martelinho de Ouro (1)', NULL, NULL,
- NULL, 'Parceria em Análise', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (240, 'Kekel Pizza', NULL, NULL,
- NULL, 'Primeiro Contato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (241, 'FisioPalm', NULL, NULL,
- NULL, 'Parceria Concluída e Publicada', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (242, 'LegalSelling', NULL, NULL,
- '10% de desconto nos 3 planos de implementação da metodologia', 'Parceria Concluída e Publicada', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (243, 'Restaurante Potiguar', NULL, NULL,
- NULL, 'Parceria Rejeitada', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (244, 'RR Lanches (Na Rua)', NULL, NULL,
- NULL, 'Parceria em Análise', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (245, 'No Espeto (Na Rua)', NULL, NULL,
- NULL, 'Parceria em Análise', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (246, 'Grupo Illa', NULL, NULL,
- NULL, 'Parceria em Análise', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (247, 'Old House Pizzaria', NULL, NULL,
- NULL, 'Parceria em Análise', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (248, 'Maria Coxinha', NULL, NULL,
- NULL, 'Parceria em Análise', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (249, 'Café Regional (Na Rua)', NULL, NULL,
- NULL, 'Parceria em Análise', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (250, 'Sucrepe (Na Rua)', NULL, NULL,
- NULL, 'Parceria Rejeitada', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (251, 'Sarah Make & Hair - Boulevard', NULL, NULL,
- NULL, 'Contrato em Andamento', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (252, 'Prof. Carlos Conce', NULL, NULL,
- NULL, 'Parceria Rejeitada', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (253, 'Fernando Peron', NULL, NULL,
- NULL, 'Primeiro Contato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (254, 'Alberto Antunes', NULL, NULL,
- NULL, 'Parceria Rejeitada', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (255, 'David anderson Personal', NULL, NULL,
- NULL, 'Parceria Rejeitada', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (256, 'Unicesumar', NULL, NULL,
- NULL, 'Parceria em Análise', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (257, 'Sup Do Gaúcho', NULL, NULL,
- NULL, 'Parceria Rejeitada', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (258, 'MegaBox', NULL, NULL,
- NULL, 'Selecione uma opção a seguir', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (259, 'Hamburguer do Mario', NULL, NULL,
- NULL, 'Contrato em Andamento', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (260, 'HG Studio Pilates', NULL, NULL,
- '20% nos serviços oferecidos pelo Studio', 'Parceria Concluída e Publicada', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (261, 'Victorya Nails', NULL, NULL,
- NULL, 'Parceria Rejeitada', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (262, 'Grace Camilo Nutricionista', NULL, NULL,
- NULL, 'Primeiro Contato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (263, 'Mayara Francisca Projetos', NULL, NULL,
- '30% de desconto na aquisição de qualquer ambiente planejado (móveis planejados)', 'Parceria Concluída e Publicada', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (264, 'Emi Design', NULL, NULL,
- 'Na aquisição de um projeto de Design de Interiores você ganha 50% de desconto no segundo projeto.', 'Parceria Concluída e Publicada', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (265, 'Só Reparos', NULL, NULL,
- NULL, 'Parceria Rejeitada', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (266, 'Auto Machine', NULL, NULL,
- NULL, 'Contrato em Andamento', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (267, 'MM Madeiras', NULL, NULL,
- NULL, 'Primeiro Contato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (268, 'Empresarial Locação (Vizinho ao Santissima Trindade)', NULL, NULL,
- NULL, 'Primeiro Contato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (269, 'Veletrica Materiais', NULL, NULL,
- NULL, 'Primeiro Contato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (270, 'Inove Estética', NULL, NULL,
- NULL, 'Parceria Rejeitada', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (271, 'Amadeus Madeiras', NULL, NULL,
- NULL, 'Parceria em Análise', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (272, 'P. Luiz Vem Historiar', NULL, NULL,
- NULL, 'Parceria em Análise', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (273, 'P. Ricardo Isolada Geografia', NULL, NULL,
- NULL, 'Parceria Rejeitada', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (274, 'CodeMinds', NULL, NULL,
- NULL, 'Parceria Concluída e Publicada', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (275, 'Budo - Escola de Artes Marciais', NULL, NULL,
- NULL, 'Parceria em Análise', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (276, 'G1 - Centro de treinamento Muay Thai', NULL, NULL,
- NULL, 'Parceria Rejeitada', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (277, 'DoKyokushinkai - Karate', NULL, NULL,
- NULL, 'Primeiro Contato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (278, 'Kung Fu XiaoBu', NULL, NULL,
- NULL, 'Primeiro Contato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (279, 'Kimura Jiu Jitsu', NULL, NULL,
- NULL, 'Primeiro Contato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (280, '‎Mcz Fight Club', NULL, NULL,
- NULL, 'Primeiro Contato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (281, 'Gracie Barra', NULL, NULL,
- NULL, 'Primeiro Contato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (282, 'Dakaru', NULL, NULL,
- NULL, 'Primeiro Contato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (283, 'Miyajima Club  Karate Shotokan', NULL, NULL,
- NULL, 'Parceria Rejeitada', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (284, 'Panetutti Maceio', NULL, NULL,
- NULL, 'Parceria Rejeitada', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (285, 'Máxima Performance', NULL, NULL,
- NULL, 'Primeiro Contato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (286, 'Wing Tsun Defesa Pessoal', NULL, NULL,
- NULL, 'Parceria em Análise', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (287, 'Bukan Dojo', NULL, NULL,
- NULL, 'Parceria em Análise', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (288, 'Budokan Escola de Artes Marciais', NULL, NULL,
- NULL, 'Parceria Rejeitada', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (289, 'Octógono fight', NULL, NULL,
- NULL, 'Parceria em Análise', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (290, 'Associação Marciiais Kumiai-Ryu', NULL, NULL,
- NULL, 'Primeiro Contato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (291, 'Dojô kiritsu', NULL, NULL,
- NULL, 'Parceria Rejeitada', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (292, 'Candido Clube do Judo', NULL, NULL,
- NULL, 'Primeiro Contato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (293, 'Shizentai Dojo', NULL, NULL,
- NULL, 'Primeiro Contato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (294, 'Furia Fight', NULL, NULL,
- NULL, 'Primeiro Contato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (295, 'Adrian Ferro', NULL, NULL,
- NULL, 'Parceria Concluída e Publicada', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (296, 'Pegue e Monte Premium', NULL, NULL,
- NULL, 'Parceria Concluída e Publicada', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (297, 'Martelinho de Ouro Prime', NULL, NULL,
- NULL, 'Primeiro Contato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (298, 'Igor Delivery car martelinho', NULL, NULL,
- NULL, 'Primeiro Contato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (299, 'Jonathan Martelinho de Ouro', NULL, NULL,
- NULL, 'Primeiro Contato', NULL);
-INSERT INTO "Associates"
- ("Id","Name","Description","Email","Benefit","Situation","AssociateImagemUrl") VALUES
- (300, 'Martelinho de Ouro (2)', NULL, NULL,
- NULL, 'Primeiro Contato', NULL);
-INSERT INTO "AssociateOperations" ("AssociateId", "OperationId") VALUES
+(200, 22),
 (201, 22),
 (202, 24),
 (203, 24),
@@ -960,63 +712,7 @@ INSERT INTO "AssociateOperations" ("AssociateId", "OperationId") VALUES
 (297, 33),
 (298, 33),
 (299, 33),
-(300, 33);
-
-INSERT INTO "Associates" ("Id", "Name", "Description", "Email", "Benefit", "Situation", "AssociateImagemUrl") VALUES
-(301, 'Alagoana Pintura Automotiva', NULL, NULL, NULL, 'Primeiro Contato', NULL),
-(302, 'Auto Moderna Funilaria e Pintura', NULL, NULL, NULL, 'Primeiro Contato', NULL),
-(303, 'Martelinho de Ouro Eduardo', NULL, NULL, NULL, 'Primeiro Contato', NULL),
-(304, 'Martelinho de Ouro (3)', NULL, NULL, NULL, 'Primeiro Contato', NULL),
-(305, 'SpecialCar - Recuperação e Pintura Automotiva', NULL, NULL, NULL, 'Primeiro Contato', NULL),
-(306, 'Fume ,martelinho de ouro', NULL, NULL, NULL, 'Parceria em Análise', NULL),
-(307, 'LEANDRO AUTO SERVICE', NULL, NULL, NULL, 'Primeiro Contato', NULL),
-(308, 'Tiago martelinho', NULL, NULL, NULL, 'Primeiro Contato', NULL),
-(309, 'Oficina J. Lailto', NULL, NULL, NULL, 'Primeiro Contato', NULL),
-(310, 'Siga Bijoux', NULL, NULL, NULL, 'Parceria Rejeitada', NULL),
-(311, 'Central da Molduras', NULL, NULL, NULL, 'Parceria em Análise', NULL),
-(312, 'Vitrine Plus Size', NULL, NULL, NULL, 'Parceria em Análise', NULL),
-(313, 'Livraria Globo Papelaria', NULL, NULL, NULL, 'Primeiro Contato', NULL),
-(314, 'Feminine Acessórios', NULL, NULL, NULL, 'Parceria Rejeitada', NULL),
-(315, 'Buda Makeup e Acessórios', NULL, NULL, NULL, 'Primeiro Contato', NULL),
-(316, 'Londres Jóias & Variedades', NULL, NULL, NULL, 'Primeiro Contato', NULL),
-(317, 'Loja do Sono', NULL, NULL, NULL, 'Contrato em Andamento', NULL),
-(318, 'Markas Surf Shop', NULL, NULL, NULL, 'Contrato em Andamento', NULL),
-(319, 'INCOREL', NULL, 'POSSÍVEL PARCERIA PARA SER CLIENTE', NULL, 'Parceria Rejeitada', NULL),
-(320, 'Palácio do Bebê', NULL, NULL, NULL, 'Primeiro Contato', NULL),
-(321, 'Pata Leve', NULL, NULL, NULL, 'Primeiro Contato', NULL),
-(322, 'Inluxe', NULL, NULL, NULL, 'Parceria Rejeitada', NULL),
-(323, 'Mundo do Celular', NULL, NULL, NULL, 'Parceria em Análise', NULL),
-(324, 'Tecplus Assitência de Informática', NULL, NULL, NULL, 'Primeiro Contato', NULL),
-(325, 'Danielle Moda Fitness', NULL, NULL, NULL, 'Parceria Rejeitada', NULL),
-(326, 'Fogão Colonial', NULL, NULL, NULL, 'Primeiro Contato', NULL),
-(327, 'YVA Doce', NULL, NULL, NULL, 'Parceria Rejeitada', NULL),
-(328, 'Star Modas', NULL, NULL, NULL, 'Primeiro Contato', NULL),
-(329, 'Bolsas de Valor', NULL, NULL, NULL, 'Contrato em Andamento', NULL),
-(330, 'Graffix', NULL, NULL, NULL, 'Parceria em Análise', NULL),
-(331, 'Giullya Storymaker', NULL, NULL, NULL, 'Selecione uma opção a seguir', NULL),
-(332, 'Lutador - Academia Amigo de Adrian', NULL, NULL, NULL, 'Primeiro Contato', NULL),
-(333, 'Andrezza Brandão Clinica', NULL, NULL, 'Clínica: 15% em produtos não promocionais  /// Salão: 10% desconto em tratamentos & 5% desconto em químicas. Exceto planos promocionais', 'Parceria Concluída e Publicada', NULL),
-(334, 'Andrezza Brandão Empresarial', NULL, NULL, 'Empresarial Anayah: Aluguéis de salas para profissionais liberais por turno  10% de desconto no primeiro contrato', 'Parceria Concluída e Publicada', NULL),
-(335, 'Play Educação', NULL, NULL, '40% nas mensalidades da Play', 'Aguardando assinatura do contrato', NULL),
-(336, 'Marcus Refrigeração', NULL, NULL, NULL, 'Primeiro Contato', NULL),
-(337, 'É de Casa Energia Solar', NULL, 'edecasaenergiasolar@gmail.com', NULL, 'Aguardando assinatura do contrato', NULL),
-(338, 'Nexa Consultoria', NULL, 'rhafaellak@gmail.com', '1h de consultoria gratuita sobre captação de recursos', 'Parceria Concluída e Publicada', NULL),
-(339, 'Pense Solar', NULL, 'comercialpense.solar@gmail.com', '5% de desconto nos produtos/serviços oferecidos pela empresa.', 'Parceria Concluída e Publicada', NULL),
-(340, 'ODONTO LOVE', NULL, NULL, NULL, 'Parceria em Análise', NULL),
-(341, 'G.Silveira e Santos', NULL, 'lannysilver14@gmail.com', '20% em produtos e 10% em exame de vista', 'Aguardando assinatura do contrato', NULL),
-(342, 'Risen Engenharia', NULL, NULL, NULL, 'Parceria Rejeitada', NULL),
-(343, 'Odonto Central', NULL, NULL, NULL, 'Primeiro Contato', NULL),
-(344, 'Francês Sublimação', NULL, NULL, NULL, 'Parceria Rejeitada', NULL),
-(345, 'Empório Padilha', NULL, NULL, NULL, 'Ignorou Contato após sucessivas tentativas', NULL),
-(346, 'ProVet Produtos e Serviços AgroPet', NULL, 'provetprodutoseservicosvet@gmail.com', '5% de desconto em produtos do pet shop, ou banho e tosa ou serviços veterinários', 'Aguardando assinatura do contrato', NULL),
-(347, 'Lavanderia viver bem', NULL, NULL, NULL, 'Parceria Rejeitada', NULL),
-(348, 'Pousada Recanto do Francês', NULL, 'recantodofran6@gmail.com', '10% de desconto em qualquer hospedagem.', 'Aguardando assinatura do contrato', NULL),
-(349, 'English For You', NULL, 'belagarcia30@gmail.com', 'Aula experimental grátis e 50% de desconto na 1° mensalidade', 'Aguardando assinatura do contrato', NULL),
-(350, 'Fox Brasil Francês', NULL, NULL, NULL, 'Ignorou Contato após sucessivas tentativas', NULL),
-(351, 'Izabela Garcia Yoga', NULL, 'belagarcia30@gmail.com', 'Aula experimental grátis e 10% desconto no pagamento mensal', 'Aguardando assinatura do contrato', NULL),
-(352, 'UbuD Apartments', NULL, 'belagarcia30@gmail.com', '10% de desconto em cima do valor do booking', 'Aguardando assinatura do contrato', NULL);
-
-INSERT INTO "AssociateOperations" ("AssociateId", "OperationId") VALUES
+(300, 33),
 (301, 33),
 (302, 33),
 (303, 33),
@@ -1066,6 +762,7 @@ INSERT INTO "AssociateOperations" ("AssociateId", "OperationId") VALUES
 (347, 28),
 (348, 26),
 (349, 23),
+(350, 45),
 (351, 46),
 (352, 26);
 
@@ -1104,6 +801,6 @@ INSERT INTO "Links" ("Id", "AssociateId", "Name", "Type") VALUES
 (32, 264, 'https://bio.site/emi.engedesign', 'Web'),
 (33, 274, 'https://www.instagram.com/escolacodeminds/', 'Instagram'),
 (34, 295, 'https://www.instagram.com/dr.adrianferreira/', 'Instagram'),
-(35, 296, 'https://api.whatsapp.com/send/?phone=%2B5582988340878&text&type=phone_number&app_absent=0', 'Whatsapp'),
+(35, 296, 'https://api.whatsapp.com/send/?phone=%2B5582988340878&text&type=phone_number&app_absent=0', 'WhatsApp'),
 (36, 333, 'https://www.instagram.com/anayahempresarial/', 'Instagram'),
-(37, 338, 'https://api.whatsapp.com/send/?phone=%2B5582987077107&text&type=phone_number&app_absent=0', 'Whatsapp');
+(37, 338, 'https://api.whatsapp.com/send/?phone=%2B5582987077107&text&type=phone_number&app_absent=0', 'WhatsApp');
