@@ -1,7 +1,10 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using NFTudio.Api.Data;
+using NFTudio.Api.Models;
 
 namespace NFTudio.Api.Common;
+
 public static class AppExtension
 {
     public static void ConfigureDevEnvironment(this WebApplication app)
@@ -34,6 +37,38 @@ public static class AppExtension
             using var transaction = db.Database.BeginTransaction();
             db.Database.ExecuteSqlRaw(sql);
             transaction.Commit();
+        }
+    }
+
+    public static async Task SeedUsersAsync(this WebApplication app)
+    {
+        using var scope = app.Services.CreateScope();
+        var userManager = scope.ServiceProvider.GetRequiredService<UserManager<User>>();
+        var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole<long>>>();
+
+        var roles = new[] { "Admin", "User" };
+
+        foreach (var role in roles)
+        {
+            if (!await roleManager.RoleExistsAsync(role))
+            {
+                await roleManager.CreateAsync(new IdentityRole<long>(role));
+            }
+        }
+
+        if (await userManager.FindByEmailAsync("admin@nftudio.com") == null)
+        {
+            var user = new User
+            {
+                UserName = "admin@nftudio.com",
+                Email = "admin@nftudio.com",
+                EmailConfirmed = true,
+            };
+
+            var result = await userManager.CreateAsync(user, "Admin@123");
+
+            if (result.Succeeded)
+                await userManager.AddToRoleAsync(user, "Admin");
         }
     }
 }

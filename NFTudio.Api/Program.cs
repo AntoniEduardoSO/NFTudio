@@ -18,6 +18,7 @@ var app = builder.Build();
 app.ConfigureDevEnvironment();
 
 app.SeedSql();
+await app.SeedUsersAsync();
 app.UseCors(ApiConfiguration.CorsPolicyName);
 app.UseSecurity();
 app.MapEndpoints();

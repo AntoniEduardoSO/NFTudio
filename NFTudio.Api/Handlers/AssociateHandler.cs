@@ -308,4 +308,20 @@ public class AssociateHandler(AppDbContext context) : IAssociateHandler
             return new PagedResponse<ICollection<AssociateResponseDto>>(null, 500, "Não foi possível recuperar as empresas parceiras");
         }
     }
+
+    public async Task<Response<AssociateResponseDto>> DeleteAsync(DeleteAssociateRequest request)
+    {
+        var associate = await context
+            .Associates
+            .FirstOrDefaultAsync(x => x.Id == request.Id);
+
+        if (associate == null)
+            return new Response<AssociateResponseDto>(null, 404, "Empresa parceira não encontrada.");
+
+        context.Associates.Remove(associate);
+
+        await context.SaveChangesAsync();
+
+        return new Response<AssociateResponseDto>(null, message: "Empresa parceira excluída com sucesso!");
+    }
 }
