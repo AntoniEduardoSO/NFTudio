@@ -1106,5 +1106,4 @@ INSERT INTO "Links" ("Id", "AssociateId", "Name", "Type") VALUES
 (34, 295, 'https://www.instagram.com/dr.adrianferreira/', 'Instagram'),
 (35, 296, 'https://api.whatsapp.com/send/?phone=%2B5582988340878&text&type=phone_number&app_absent=0', 'Whatsapp'),
 (36, 333, 'https://www.instagram.com/anayahempresarial/', 'Instagram'),
-(37, 334, 'https://www.instagram.com/anayahempresarial/', 'Instagram'),
-(38, 338, 'https://api.whatsapp.com/send/?phone=%2B5582987077107&text&type=phone_number&app_absent=0', 'Whatsapp');
+(37, 338, 'https://api.whatsapp.com/send/?phone=%2B5582987077107&text&type=phone_number&app_absent=0', 'Whatsapp');
