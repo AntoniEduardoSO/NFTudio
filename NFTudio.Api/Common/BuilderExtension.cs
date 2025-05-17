@@ -67,6 +67,7 @@ public static class BuilderExtension
     {
         builder.Services.AddTransient<IAssociateHandler, AssociateHandler>();
         builder.Services.AddTransient<IOperationHandler, OperationHandler>();
+        builder.Services.AddTransient<ILinkHandler, LinkHandler>();
     }
 
 

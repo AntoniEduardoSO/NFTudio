@@ -1,6 +1,7 @@
 using NFTudio.Api.Common;
 using NFTudio.Api.Endpoints.Associates;
 using NFTudio.Api.Endpoints.Identity;
+using NFTudio.Api.Endpoints.Links;
 using NFTudio.Api.Endpoints.Operations;
 using NFTudio.Api.Models;
 using NFTudio.Core.Requests.Associate;
@@ -24,7 +25,11 @@ public static class Endpoint
             .MapEndpoint<GetAllAssociateManageEndpoint>()
             .MapEndpoint<UpdateAssociateEndpoint>()
             .MapEndpoint<GetAllAssociateHomeEndpoint>()
-            .MapEndpoint<DeleteAssociateEndpoint>();
+            .MapEndpoint<DeleteAssociateEndpoint>()
+            .MapEndpoint<GetByIdAssociateEndpoint>()
+            .MapEndpoint<CreateLinkEndpoint>()
+            .MapEndpoint<UpdateLinkEndpoint>()
+            .MapEndpoint<DeleteLinkEndpoint>();
 
         endpoints.MapGroup("v1/operation")
             .WithTags("Operations")

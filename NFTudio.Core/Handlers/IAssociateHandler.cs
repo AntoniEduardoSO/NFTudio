@@ -10,5 +10,6 @@ public interface IAssociateHandler
     public Task<PagedResponse<ICollection<AssociateResponseDto>>> GetAllHomeAsync(GetAllAssociateHomeRequest request);
     public Task<PagedResponse<ICollection<AssociateResponseDto>>> GetAllManageAsync(GetAllAssociateManageRequest request);
     public Task<Response<AssociateResponseDto>> UpdateAsync(UpdateAssociateRequest request);
+    public Task<Response<AssociateResponseDto>> GetByIdAsync(GetAssociateByIdRequest request);
     public Task<Response<AssociateResponseDto>> DeleteAsync(DeleteAssociateRequest request);
 }

@@ -8,8 +8,10 @@ using NFTudio.Core.Requests.Associate;
 using NFTudio.Core.Responses;
 
 namespace NFTudio.Api.Handlers;
+
 public class AssociateHandler(AppDbContext context) : IAssociateHandler
 {
+
     public class StringUtils
     {
         public static string RemoveAccents(string input)
@@ -122,7 +124,7 @@ public class AssociateHandler(AppDbContext context) : IAssociateHandler
                 var tagSet = request.OperationNames
                   .Select(t => StringUtils.RemoveAccents(t.ToLower()))
                   .ToHashSet();
-                  
+
                 associatesList = associatesList
                     .Where(a =>
                         a.AssociateOperations
@@ -171,63 +173,31 @@ public class AssociateHandler(AppDbContext context) : IAssociateHandler
             .Include(a => a.AssociateOperations)
                 .ThenInclude(ao => ao.Operation)
             .FirstOrDefaultAsync(a => a.Id == request.Id);
-        
+
         if (associate == null)
         {
-            return new Response<AssociateResponseDto>(null, 404, "Empresa nao encotrado");
+            return new Response<AssociateResponseDto>(null, 404, "Empresa nao encontrada");
         }
 
-        associate.Name               = request.Name;
-        associate.Description        = request.Description;
-        associate.Email              = request.Email;
-        associate.Benefit            = request.Benefit;
-        associate.Situation          = request.Situation;
-        associate.AssociateImagemUrl = request.AssociateImagemUrl;
+        if (!string.IsNullOrWhiteSpace(request.Name)) associate.Name = request.Name;
+        if (!string.IsNullOrWhiteSpace(request.Description)) associate.Description = request.Description;
+        if (!string.IsNullOrWhiteSpace(request.Email)) associate.Email = request.Email;
+        if (!string.IsNullOrWhiteSpace(request.Benefit)) associate.Benefit = request.Benefit;
+        if (!string.IsNullOrWhiteSpace(request.Situation)) associate.Situation = request.Situation;
+        if (!string.IsNullOrWhiteSpace(request.AssociateImagemUrl)) associate.AssociateImagemUrl = request.AssociateImagemUrl;
 
-        var linksToRemove = associate.Links
-            .Where(l => !request.Links.Any(r => r.Id == l.Id)).ToList();
-        context.Links.RemoveRange(linksToRemove);
-
-        foreach (var lDto in request.Links)
-        {
-            var link = associate.Links.FirstOrDefault(x => x.Id == lDto.Id);
-            if (link == null)                      
-                associate.Links.Add(new Link { Name = lDto.Name, Type = lDto.Type });
-            else                                    
-            {
-                link.Name = lDto.Name;
-                link.Type = lDto.Type;
-            }
-        }
-
-        var desired = request.Operations.Select(o => o.Name).ToHashSet();
-        var toRemove = associate.AssociateOperations
-            .Where(ao => !desired.Contains(ao.Operation.Name))
-            .ToList();
-        context.AssociateOperations.RemoveRange(toRemove);
-
-        foreach (var opName in desired)
-        {
-            if (associate.AssociateOperations.All(ao => ao.Operation.Name != opName))
-            {
-                var op = await context.Operations.FirstOrDefaultAsync(o => o.Name == opName)
-                         ?? new Operation { Name = opName };
-                associate.AssociateOperations.Add(new AssociateOperation { Operation = op });
-            }
-        }
-
-        await context.SaveChangesAsync();
+        context.Update(associate);
 
         var dto = new AssociateResponseDto
         {
-            Name        = associate.Name,
+            Name = associate.Name,
             Description = associate.Description,
-            Email       = associate.Email,
-            Benefit     = associate.Benefit,
-            Situation   = associate.Situation,
+            Email = associate.Email,
+            Benefit = associate.Benefit,
+            Situation = associate.Situation,
             AssociateImagemUrl = associate.AssociateImagemUrl,
-            Links       = associate.Links.Select(l => new LinkDto { Name = l.Name, Type = l.Type }).ToList(),
-            Operations  = associate.AssociateOperations.Select(ao => ao.Operation.Name).ToList()
+            Links = associate.Links.Select(l => new LinkDto { Name = l.Name, Type = l.Type }).ToList(),
+            Operations = associate.AssociateOperations.Select(ao => ao.Operation.Name).ToList()
         };
 
         return new Response<AssociateResponseDto>(dto, 200, "Empresa atualizada com sucesso!");
@@ -255,7 +225,7 @@ public class AssociateHandler(AppDbContext context) : IAssociateHandler
                     .ToList();
             }
 
-            if(!string.IsNullOrWhiteSpace(request.Situation))
+            if (!string.IsNullOrWhiteSpace(request.Situation))
             {
                 associatesList = associatesList
                     .Where(a => a.Situation == request.Situation)
@@ -267,7 +237,7 @@ public class AssociateHandler(AppDbContext context) : IAssociateHandler
                 var tagSet = request.OperationNames
                   .Select(t => StringUtils.RemoveAccents(t.ToLower()))
                   .ToHashSet();
-                  
+
                 associatesList = associatesList
                     .Where(a =>
                         a.AssociateOperations
@@ -323,5 +293,38 @@ public class AssociateHandler(AppDbContext context) : IAssociateHandler
         await context.SaveChangesAsync();
 
         return new Response<AssociateResponseDto>(null, message: "Empresa parceira excluída com sucesso!");
+    }
+
+    public async Task<Response<AssociateResponseDto>> GetByIdAsync(GetAssociateByIdRequest request)
+    {
+        var dto = await context.Associates
+        .AsNoTracking()
+        .Where(a => a.Id == request.Id)
+        .Select(a => new AssociateResponseDto
+        {
+            Id = a.Id,
+            Name = a.Name,
+            Description = a.Description,
+            Email = a.Email,
+            Benefit = a.Benefit,
+            Situation = a.Situation,
+            AssociateImagemUrl = a.AssociateImagemUrl,
+            Operations = a.AssociateOperations
+                .Select(ao => ao.Operation.Name)
+                .ToList(),
+            Links = a.Links
+                .Select(l => new LinkDto
+                {
+                    Id = l.Id,
+                    Name = l.Name,
+                    Type = l.Type
+                })
+                .ToList()
+        })
+        .FirstOrDefaultAsync();
+
+        return dto is null
+            ? new Response<AssociateResponseDto>(null, 404, "Empresa parceira não encontrada") 
+            : new Response<AssociateResponseDto>(dto);
     }
 }
