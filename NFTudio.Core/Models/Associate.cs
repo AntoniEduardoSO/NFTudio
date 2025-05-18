@@ -8,6 +8,7 @@ public class Associate
     public string Benefit { get; set; } = string.Empty;
     public string Situation { get; set; } = string.Empty;
     public string AssociateImagemUrl { get; set; } = string.Empty;
+    public string Location { get; set; } = string.Empty;
     public ICollection<AssociateOperation> AssociateOperations { get; set; } = [];
     public ICollection<Link> Links { get; set; } = [];
 }

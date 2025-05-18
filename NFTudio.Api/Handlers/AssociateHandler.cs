@@ -84,6 +84,7 @@ public class AssociateHandler(AppDbContext context) : IAssociateHandler
                 Benefit = associate.Benefit,
                 Situation = associate.Situation,
                 AssociateImagemUrl = associate.AssociateImagemUrl,
+                Location = associate.Location,
                 Links = associate.Links.Select(l => new LinkDto { Name = l.Name, Type = l.Type }).ToList(),
                 Operations = associate.AssociateOperations.Select(ao => ao.Operation.Name).ToList()
             };
@@ -133,6 +134,13 @@ public class AssociateHandler(AppDbContext context) : IAssociateHandler
                     .ToList();
             }
 
+            if (!string.IsNullOrWhiteSpace(request.Location))
+            {
+                associatesList = associatesList
+                    .Where(a => a.Location == request.Location)
+                    .ToList();
+            }
+
             var totalCount = associatesList.Count;
 
             var paged = associatesList
@@ -150,6 +158,7 @@ public class AssociateHandler(AppDbContext context) : IAssociateHandler
                 Benefit = a.Benefit,
                 Situation = a.Situation,
                 AssociateImagemUrl = a.AssociateImagemUrl,
+                Location = a.Location,
                 Operations = a.AssociateOperations?.Select(ao => ao.Operation.Name).ToList() ?? [],
                 Links = a.Links?.Select(l => new LinkDto { Name = l.Name, Type = l.Type }).ToList() ?? []
             }).ToList();
@@ -196,6 +205,7 @@ public class AssociateHandler(AppDbContext context) : IAssociateHandler
             Benefit = associate.Benefit,
             Situation = associate.Situation,
             AssociateImagemUrl = associate.AssociateImagemUrl,
+            Location = associate.Location,
             Links = associate.Links.Select(l => new LinkDto { Name = l.Name, Type = l.Type }).ToList(),
             Operations = associate.AssociateOperations.Select(ao => ao.Operation.Name).ToList()
         };
@@ -246,6 +256,13 @@ public class AssociateHandler(AppDbContext context) : IAssociateHandler
                     .ToList();
             }
 
+            if (!string.IsNullOrWhiteSpace(request.Location))
+            {
+                associatesList = associatesList
+                    .Where(a => a.Location == request.Location)
+                    .ToList();
+            }
+
             var totalCount = associatesList.Count;
 
             var paged = associatesList
@@ -263,6 +280,7 @@ public class AssociateHandler(AppDbContext context) : IAssociateHandler
                 Benefit = a.Benefit,
                 Situation = a.Situation,
                 AssociateImagemUrl = a.AssociateImagemUrl,
+                Location = a.Location,
                 Operations = a.AssociateOperations?.Select(ao => ao.Operation.Name).ToList() ?? [],
                 Links = a.Links?.Select(l => new LinkDto { Name = l.Name, Type = l.Type }).ToList() ?? []
             }).ToList();
@@ -309,6 +327,7 @@ public class AssociateHandler(AppDbContext context) : IAssociateHandler
             Benefit = a.Benefit,
             Situation = a.Situation,
             AssociateImagemUrl = a.AssociateImagemUrl,
+            Location = a.Location,
             Operations = a.AssociateOperations
                 .Select(ao => ao.Operation.Name)
                 .ToList(),

@@ -23,6 +23,7 @@ public class GetAllAssociateHomeEndpoint : IEndpoint
         [FromQuery] int pageNumber = Configuration.DefaultPageNumber,
         [FromQuery] int pageSize = Configuration.DefaultPageSize,
         [FromQuery] string search = "",
+        [FromQuery] string? location = "",
         [FromQuery] string[]? operationNames = null)
     {
         var request = new GetAllAssociateHomeRequest
@@ -30,6 +31,7 @@ public class GetAllAssociateHomeEndpoint : IEndpoint
             PageNumber = pageNumber,
             PageSize = pageSize,
             Search = search,
+            Location = location,
             OperationNames = operationNames
         };
 

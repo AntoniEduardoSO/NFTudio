@@ -35,6 +35,12 @@ public class AssociateMapping : IEntityTypeConfiguration<Associate>
             .HasColumnType("TEXT")
             .HasMaxLength(255)
             .IsRequired(true);
+        
+        builder.Property(x => x.Location)
+            .HasColumnType("TEXT")
+            .HasMaxLength(255)
+            .IsRequired(false);
+
 
         builder.Property(x => x.AssociateImagemUrl)
             .HasColumnType("TEXT")
