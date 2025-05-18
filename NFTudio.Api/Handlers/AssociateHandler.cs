@@ -196,6 +196,7 @@ public class AssociateHandler(AppDbContext context) : IAssociateHandler
         if (!string.IsNullOrWhiteSpace(request.AssociateImagemUrl)) associate.AssociateImagemUrl = request.AssociateImagemUrl;
 
         context.Update(associate);
+        await context.SaveChangesAsync();
 
         var dto = new AssociateResponseDto
         {

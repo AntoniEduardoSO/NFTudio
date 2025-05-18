@@ -53,9 +53,9 @@ VALUES
 INSERT INTO "Associates" 
 ("Id", "Name", "Description", "Email", "Benefit", "Situation", "AssociateImagemUrl", "Location") VALUES
 (1, 'Dra. Mayara Leite', NULL, NULL, '20% de desconto na avaliação fisioterapêutica infantil', 'Parceria Concluída e Publicada', NULL, 'Maceió'),
-(2, 'Esp. Yasllan Moura - Personal Trainer', NULL, NULL, '20% de desconto na confecção de treinos e na avaliação', 'Parceria Concluída e Publicada', 'Maceió', NULL),
+(2, 'Esp. Yasllan Moura - Personal Trainer', NULL, NULL, '20% de desconto na confecção de treinos e na avaliação', 'Parceria Concluída e Publicada', NULL, 'Maceió'),
 (3, 'Registartt - Propriedade Intelectual', NULL, NULL, '20% de desconto nos contratos firmados pela parceira', 'Parceria Concluída e Publicada', NULL, 'Maceió'),
-(4, 'i9 - inove - Soluções Ambientais', NULL, 'sidnei@i9ambiental.eco.br', 'Desconto de 5% em kits de energia solar, juntamente com um brinde surpresa com abrangência para todo Nordeste', 'Maceió', 'Parceria Concluída e Publicada', NULL),
+(4, 'i9 - inove - Soluções Ambientais', NULL, 'sidnei@i9ambiental.eco.br', 'Desconto de 5% em kits de energia solar, juntamente com um brinde surpresa com abrangência para todo Nordeste', 'Parceria Concluída e Publicada', NULL, 'Maceió'),
 (5, 'Colégio Vila Rica', NULL, NULL, NULL, 'Parceria em Análise', NULL, NULL),
 (6, 'Colégio São Judas Tadeu', NULL, NULL, NULL, 'Parceria Rejeitada', NULL, NULL),
 (7, 'Colégio Brasil (Antigo Isaac Newton)', NULL, NULL, NULL, 'Primeiro Contato', NULL, NULL),
