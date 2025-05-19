@@ -151,7 +151,12 @@ public class AssociateHandler(AppDbContext context) : IAssociateHandler
                 Situation = a.Situation,
                 AssociateImagemUrl = a.AssociateImagemUrl,
                 Operations = a.AssociateOperations?.Select(ao => ao.Operation.Name).ToList() ?? [],
-                Links = a.Links?.Select(l => new LinkDto { Name = l.Name, Type = l.Type }).ToList() ?? []
+                Links = a.Links?.Select(l => new LinkDto
+                {
+                    Id = l.Id,
+                    Name = l.Name,
+                    Type = l.Type
+                }).ToList() ?? []
             }).ToList();
 
             return new PagedResponse<ICollection<AssociateResponseDto>>(
@@ -264,7 +269,12 @@ public class AssociateHandler(AppDbContext context) : IAssociateHandler
                 Situation = a.Situation,
                 AssociateImagemUrl = a.AssociateImagemUrl,
                 Operations = a.AssociateOperations?.Select(ao => ao.Operation.Name).ToList() ?? [],
-                Links = a.Links?.Select(l => new LinkDto { Name = l.Name, Type = l.Type }).ToList() ?? []
+                Links = a.Links?.Select(l => new LinkDto
+                {
+                    Id = l.Id,
+                    Name = l.Name,
+                    Type = l.Type
+                }).ToList() ?? []
             }).ToList();
 
             return new PagedResponse<ICollection<AssociateResponseDto>>(
