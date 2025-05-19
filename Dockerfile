@@ -5,6 +5,10 @@ WORKDIR /app
 # Informa ao Kestrel para escutar em HTTP:80 e HTTPS:443
 ENV ASPNETCORE_URLS="http://+:80;https://+:443"
 
+COPY certs/mycert.pfx /app/mycert.pfx
+ENV ASPNETCORE_Kestrel__Certificates__Default__Path=/app/mycert.pfx
+ENV ASPNETCORE_Kestrel__Certificates__Default__Password=Su@SenhaAqui
+ENV ASPNETCORE_URLS="http://+:80;https://+:443"
 # Exponha ambas as portas
 EXPOSE 80
 EXPOSE 443
@@ -28,6 +32,7 @@ COPY --from=build /app/publish ./
 
 # Seed de dados
 COPY NFTudio.Api/Data/seed.sql ./Data/seed.sql
+
 
 
 ENTRYPOINT ["dotnet", "NFTudio.Api.dll"]
