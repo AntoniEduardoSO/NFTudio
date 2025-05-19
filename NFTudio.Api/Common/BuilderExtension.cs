@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace NFTudio.Api.Common;
+
 public static class BuilderExtension
 {
     public static void AddConfiguration(
@@ -33,6 +34,17 @@ public static class BuilderExtension
         builder.Services
             .AddAuthentication(IdentityConstants.ApplicationScheme)
             .AddIdentityCookies();
+        builder.Services.ConfigureApplicationCookie(opt =>
+        {
+            opt.Cookie.SameSite = SameSiteMode.None;     
+            opt.Cookie.SecurePolicy = CookieSecurePolicy.Always; 
+
+            opt.Events.OnRedirectToLogin = ctx =>
+            {
+                ctx.Response.StatusCode = StatusCodes.Status401Unauthorized;
+                return Task.CompletedTask;
+            };
+        });
 
         builder.Services.AddAuthorization();
     }
