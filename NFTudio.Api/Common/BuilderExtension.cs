@@ -56,10 +56,10 @@ public static class BuilderExtension
             options => options.AddPolicy(
                 ApiConfiguration.CorsPolicyName,
                 policy => policy
-                    .WithOrigins([
+                    .WithOrigins(
                         Configuration.BackendUrl,
                         Configuration.FrontendUrl
-                    ])
+                    )
                     .AllowAnyMethod()
                     .AllowAnyHeader()
                     .AllowCredentials()
