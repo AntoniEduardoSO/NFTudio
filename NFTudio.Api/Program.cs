@@ -17,9 +17,16 @@ var app = builder.Build();
 
 
 app.ConfigureDevEnvironment();
+
 app.SeedSql();
 await app.SeedUsersAsync();
-app.UseHttpsRedirection();
+
+app.UseForwardedHeaders(new ForwardedHeadersOptions
+{
+    ForwardedHeaders = ForwardedHeaders.XForwardedProto | ForwardedHeaders.XForwardedHost,
+    KnownNetworks = { },  
+    KnownProxies  = { }
+});
 app.UseCors(ApiConfiguration.CorsPolicyName);
 app.UseSecurity();
 app.MapEndpoints();
