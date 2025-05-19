@@ -17,6 +17,8 @@ public static class BuilderExtension
                 .Configuration
                 .GetConnectionString("DefaultConnection")
             ?? string.Empty;
+
+        Configuration.FrontendUrl = builder.Configuration.GetValue<string>("FrontendUrl") ?? string.Empty;
     }
 
     public static void AddDocumentation(this WebApplicationBuilder builder)
