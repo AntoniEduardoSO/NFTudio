@@ -25,6 +25,7 @@ public class GetAllAssociateManageEndpoint : IEndpoint
         [FromQuery] int pageSize = Configuration.DefaultPageSize,
         [FromQuery] string search = "",
         [FromQuery] string? situation = "",
+        [FromQuery] string location = "",
         [FromQuery] string[]? operationNames = null)
     {
         var request = new GetAllAssociateManageRequest
@@ -33,6 +34,7 @@ public class GetAllAssociateManageEndpoint : IEndpoint
             PageSize = pageSize,
             Search = search,
             Situation = situation,
+            Location = location,
             OperationNames = operationNames,
         };
 

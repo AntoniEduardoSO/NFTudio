@@ -8,6 +8,7 @@ public class AssociateResponseDto
     public string Benefit { get; set; } = string.Empty;
     public string Situation { get; set; } = string.Empty;
     public string AssociateImagemUrl { get; set; } = string.Empty;
+    public string Location { get; set; } = string.Empty;
     public List<string> Operations { get; set; } = [];
     public List<LinkDto> Links { get; set; } = [];
 }
